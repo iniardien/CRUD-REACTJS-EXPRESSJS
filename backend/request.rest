@@ -1,0 +1,31 @@
+GET http://localhost:5000/users
+
+###
+GET http://localhost:5000/users/1
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "nama" : "Korman",
+    "umur" : "18",
+    "alamat" : "Bandung",
+    "kelas" : "10",
+    "jenis_kelamin" : "Laki Laki"
+}
+
+###
+PATCH  http://localhost:5000/users/1
+Content-Type: application/json
+
+{
+    "nama" : "Korman Goreng",
+    "umur" : "18",
+    "alamat" : "Bandung",
+    "kelas" : "10",
+    "jenis_kelamin" : "Laki Laki"
+}
+
+###
+DELETE http://localhost:5000/users/2
